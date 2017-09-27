@@ -214,6 +214,10 @@ tbody button {
 	margin-right: auto;
 }
 
+td:last-child button {
+	background-color: #D9534F;
+}
+
 /*Table - End*/
 
 @media only screen and (max-width: 600px) {
