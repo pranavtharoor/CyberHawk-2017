@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CyberHawk Admin 2017</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/admin.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Admin App</h1>
+	<div id="app">
+		<div> <!-- Layout -->
+			<nav> <!-- Navigation -->
+			<h1>CyberHawk Admin 2017</h1>
+			<ul>
+				<li><a href='/home'>Home</a></li>
+				<li><a href='/question'>Question</a></li>
+				<li><a href='/hint'>Hint</a></li>
+				<li><a href='/user'>User</a></li>
+				<li><a href='/logout'>Logout</a></li>
+			</ul>
+			</nav> <!-- Navigation -->
+			<div> <!-- LayoutNested -->
+				<div> <!-- Hint -->
+					<a href="#">Hints</a>
+					<a href="#">Add</a>
+					<div> <!-- EditHints -->
+						<p className={setInfoClass}>{this.props.info}</p>
+						<form>
+							<input type="hidden" id="id" defaultValue={this.escapeZero(this.props.hint.id)} />
+							<input type="number" id="level" defaultValue={this.escapeZero(this.props.hint.level)} />
+							<input type="text" id="hint_activated" placeholder="Hint Activated" defaultValue={this.escapeZero(this.props.hint.hint_activated)}/>
+							<input type="text" id="hint" placeholder="Hint" defaultValue={this.props.hint.hint}/>
+							<input type="submit"/>
+						</form>
+					</div> <!-- EditHints -->
+				</div> <!-- Hint -->
+			</div> <!-- LayoutNested -->
+		</div> <!-- Layout -->
+	</div>
+	<script type="text/javascript" src="/static/js/admin.js"></script>
+</body>
+</html>

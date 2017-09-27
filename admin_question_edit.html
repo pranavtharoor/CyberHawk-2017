@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CyberHawk Admin 2017</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/admin.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Admin App</h1>
+	<div id="app">
+		<div> <!-- Layout -->
+			<nav> <!-- Navigation -->
+			<h1>CyberHawk Admin 2017</h1>
+			<ul>
+				<li><a href='/home'>Home</a></li>
+				<li><a href='/question'>Question</a></li>
+				<li><a href='/hint'>Hint</a></li>
+				<li><a href='/user'>User</a></li>
+				<li><a href='/logout'>Logout</a></li>
+			</ul>
+			</nav> <!-- Navigation -->
+			<div> <!-- LayoutNested -->
+				<div> <!-- Question -->
+					<a href="#">Questions</a>
+					<a href="#">Add</a>
+					<div> <!-- EditQuestion -->
+						<p>{this.props.info}</p>
+						<form>
+							<input type="number" id="level" defaultValue={this.escapeZero(this.props.question.level)} />
+							<input type="text" id="question" placeholder="Question" defaultValue={this.props.question.question}/>
+							<input type="text" id="answer" placeholder="Answer" defaultValue={this.props.question.answer}/>
+							<input type="number" id="status" placeholder="Question Status" defaultValue={this.escapeZero(this.props.question.question_status)}/>
+							<input type="text" id="extra" placeholder="Extra Info" defaultValue={this.props.question.extra_info}/>
+							<input type="submit" onClick = {this.sendQuestionInfo}/>
+						</form>
+					</div> <!-- EditQuestion -->
+				</div> <!-- Question -->
+			</div> <!-- LayoutNested -->
+		</div> <!-- Layout -->
+	</div>
+	<script type="text/javascript" src="/static/js/admin.js"></script>
+</body>
+</html>

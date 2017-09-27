@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CyberHawk Admin 2017</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/admin.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Admin App</h1>
+	<div id="app">
+		<div> <!-- Layout -->
+			<nav> <!-- Navigation -->
+			<h1 class="nav-heading">CyberHawk Admin 2017</h1>
+			<hr>
+			<ul>
+				<li><a href='/home'>Home</a></li>
+				<li><a href='/question'>Question</a></li>
+				<li><a href='/hint'>Hint</a></li>
+				<li><a href='/user'>User</a></li>
+				<li><a href='/logout'>Logout</a></li>
+			</ul>
+			</nav> <!-- Navigation -->
+			<div> <!-- LayoutNested -->
+				<div> <!-- Hint -->
+					<a href="#">Hints</a>
+					<a href="#">Add</a>
+					<div> <!-- AddHint -->
+						<h1>Enter Hints Here!</h1>
+						<p className={setInfoClass}>{this.props.info}</p>
+						<form}>
+							<input type="number" id="level" placeholder="Level" />
+							<input type="number" id="hint_activated" placeholder="Hint Activated" />
+							<input type="text" id="hint" placeholder="Hint" />
+							<input type="submit"/>
+						</form>
+					</div> <!-- AddHint -->
+				</div> <!-- Hint -->
+			</div> <!-- LayoutNested -->
+		</div> <!-- Layout -->
+	</div>
+	<script type="text/javascript" src="/static/js/admin.js"></script>
+</body>
+</html>

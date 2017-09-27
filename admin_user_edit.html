@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CyberHawk Admin 2017</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/admin.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Admin App</h1>
+	<div id="app">
+		<div> <!-- Layout -->
+			<nav> <!-- Navigation -->
+			<h1>CyberHawk Admin 2017</h1>
+			<ul>
+				<li><a href='/home'>Home</a></li>
+				<li><a href='/question'>Question</a></li>
+				<li><a href='/hint'>Hint</a></li>
+				<li><a href='/user'>User</a></li>
+				<li><a href='/logout'>Logout</a></li>
+			</ul>
+			</nav> <!-- Navigation -->
+			<div> <!-- LayoutNested -->
+				<div> <!-- User -->
+					<a href="#">Users</a>
+					<a href="#">Add</a>
+					<div> <!-- Edit Users -->
+						<h1>Edit Users Here!</h1>
+						<p className={setInfoClass}>{this.props.info}</p>
+						<form>
+							<input type="hidden" id="id" placeholder="id" defaultValue={this.props.user.id}/>
+							<input type="text" id="name" placeholder="Name" defaultValue={this.props.user.name}/>
+							<input type="text" id="email" placeholder="Email" defaultValue={this.props.user.email}/>
+							<input type="number" id="number" placeholder="Phone" defaultValue={this.props.user.number}/>
+							<input type="text" id="college" placeholder="College" defaultValue={this.props.user.college}/>
+							<input type="number" id="level" placeholder="Level" defaultValue={this.props.user.level}/>
+							<input type="number" id="access_level" placeholder="Access Level" defaultValue={this.props.user.access_level}/>
+							<input type="submit"}/>
+						</form>
+					</div> <!-- Edit Users -->
+				</div> <!-- User -->
+			</div> <!-- LayoutNested -->
+		</div> <!-- Layout -->
+	</div>
+	<script type="text/javascript" src="/static/js/admin.js"></script>
+</body>
+</html>

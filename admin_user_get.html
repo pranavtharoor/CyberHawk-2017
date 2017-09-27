@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CyberHawk Admin 2017</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/admin.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Admin App</h1>
+	<div id="app">
+		<div> <!-- Layout -->
+			<nav> <!-- Navigation -->
+			<h1>CyberHawk Admin 2017</h1>
+			<ul>
+				<li><a href='/home'>Home</a></li>
+				<li><a href='/question'>Question</a></li>
+				<li><a href='/hint'>Hint</a></li>
+				<li><a href='/user'>User</a></li>
+				<li><a href='/logout'>Logout</a></li>
+			</ul>
+			</nav> <!-- Navigation -->
+			<div> <!-- LayoutNested -->
+				<div> <!-- User -->
+					<a href="#">Users</a>
+					<a href="#">Add</a>
+					<div> <!-- GetUser -->
+						<p className={setInfoClass}>{this.props.info}</p>
+						<table>
+							<caption>Users</caption>
+							<tbody>
+								<tr>
+									<th>ID</th>
+									<th>Name</th>
+									<th>Email</th>
+									<th>Phone</th>
+									<th>College</th>
+									<th>Level</th>
+									<th>Access Level</th>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr key=1>
+									<td>1</td>
+									<td>UserName</td>
+									<td>UserEmail</td>
+									<td>UserNumber</td>
+									<td>UserCollege</td>
+									<td>UserLevel</td>
+									<td>UserAccessLevel</td>
+									<td><button>edit</button></td>
+									<td><button>delete</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div> <!-- GetUser -->
+				</div> <!-- User -->
+			</div> <!-- LayoutNested -->
+		</div> <!-- Layout -->
+	</div>
+	<script type="text/javascript" src="/static/js/admin.js"></script>
+</body>
+</html>

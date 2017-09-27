@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CyberHawk Admin 2017</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/admin.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div> <!-- Layout -->
+			<nav class=""> <!-- Navigation -->
+			<div class="logo"></div>
+			<!-- <hr> -->
+			<ul>
+				<li><a href='/home'>Home</a></li>
+				<li><a href='/question'>Question</a></li>
+				<li><a href='/hint'>Hint</a></li>
+				<li><a href='/user'>User</a></li>
+				<li><a href='/logout'>Logout</a></li>
+			</ul>
+			</nav> <!-- Navigation -->
+			<div id="layout-nested" class=""> <!-- LayoutNested -->
+				<div class="heading-bar">
+
+					<div id="burger-container" class="">
+				        <div id="burger">
+				    	    <span>&nbsp;</span>
+				            <span>&nbsp;</span>
+				            <span>&nbsp;</span>
+				        </div>
+				    </div>
+					<div class="heading">CyberHawk Admin 2017</div>
+				</div>
+				<div class="hints-box"> <!-- Hint -->
+					<div class="table-options">
+						<div>Hints</div>
+						<a class="table-button" href="#">Hints</a>
+						<a class="table-button" href="#">Add</a>
+					</div>
+					<div class="table-container"> <!-- GetHint -->
+						<table cellspacing="0" cellpadding="0">
+							<caption>{this.props.info}</caption>
+							<tbody class="table-head">
+								<tr>
+									<th>ID</th>
+									<th>Level</th>
+									<th>Hint Activated</th>
+									<th>Hint</th>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr key=1>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>Insert Hint Here</td>
+									<td><button>edit</button></td>
+									<td><button>delete</button></td>
+								</tr>
+								<tr key=2>
+									<td>2</td>
+									<td>1</td>
+									<td>1</td>
+									<td>Insert Hint Here</td>
+									<td><button>edit</button></td>
+									<td><button>delete</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div> <!-- GetHint -->
+				</div> <!-- Hint -->
+			</div> <!-- LayoutNested -->
+		</div> <!-- Layout -->
+	</div>
+	<script type="text/javascript" src="/static/js/admin.js"></script>
+</body>
+</html>
