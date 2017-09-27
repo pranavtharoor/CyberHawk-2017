@@ -100,7 +100,6 @@ nav {
 	top: 0;
 	left: -200px;
 	height: 100vh;
-	overflow-y: scroll;
 	width: 200px;
 	padding-bottom: 40px;
 	color: #89959E;
@@ -159,11 +158,8 @@ nav ul {
 	padding: 8px 20px;
 	background-color: #1D2120;
 	color: #fff;
+	margin-top: 10px;
 	border-radius: 5px; 
-}
-
-.table-container {
-	overflow-x: scroll; 
 }
 
 table {
@@ -220,7 +216,7 @@ tbody button {
 
 /*Table - End*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
 	.heading {
 		display: none;
@@ -257,11 +253,26 @@ tbody button {
 		font-size: 18px;
 		display: flex;
 		align-items: center;
-		margin-top: 10px;
 	}
 
 	.hints-box {
 		margin: 5px;
+	}
+
+}
+
+@media only screen and (max-width: 780px) {
+
+	.table-container {
+		overflow-x: scroll;
+	}
+
+}
+
+@media only screen and (max-height: 550px) {
+
+	nav {
+		overflow-y: scroll;
 	}
 
 }
